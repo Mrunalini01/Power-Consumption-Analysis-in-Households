@@ -1,0 +1,57 @@
+<html>
+<style>
+.idiv{
+text-align:left;
+}
+body{
+font-family:sergio;
+}
+input{
+font-size:1.3em;
+width:30%;
+text-align:left;
+}
+input placeholder{
+text-align:left;
+}
+button{
+outline:0;
+border:0;
+background-color:darkred;
+color:white;
+width:100px;
+height:40px;
+}
+</style>
+<head>
+<title>-- Power Consumption Analysis -- </title>
+</head>
+<body>
+<style>
+body
+{
+background-image:url('../static/PCA.jpg');
+background-position: center;
+font-family:serif;
+background-size:cover;
+}
+</style>
+<div class='idiv'>
+</br>
+</br>
+<h1>Power Consumption Analysis</h1>
+<form action="./predict" method="POST">
+<input type="text" name="Global Reactive Power" placeholder="Enter the Global reactive power value(0-1)" required="required" /><br><br>
+<input type="text" name="Global Intensity" placeholder="Enter the Global intensity value" required="required" /><br><br>
+<input type="text" name="Submeter Reading 1" placeholder="Enter the Submeter Reading 1" required="required" /><br><br>
+<input type="text" name="Submeter Reading 2" placeholder="Enter the Submeter Reading 2" required="required" /><br><br>
+<input type="text" name="Submeter Reading 3" placeholder="Enter the Submeter Reading 3" required="required" /><br><br>
+<button type="submit" class="my-cta-button">Predict</button>
+</form>
+<br/>
+<br/>
+<br/>
+</div>
+
+</body>
+</html>
